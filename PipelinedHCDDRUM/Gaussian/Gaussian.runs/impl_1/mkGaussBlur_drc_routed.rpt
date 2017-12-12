@@ -1,0 +1,182 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Thu Nov  9 17:58:53 2017
+| Host         : csgvinamra-Precision-WorkStation-T3500 running 64-bit Ubuntu 16.04.3 LTS
+| Command      : report_drc
+------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 23
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+50 out of 50 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: send1_data[9:0], send2_data[9:0], receive1[9:0], receive2[9:0], CLK, RST_N, EN_send1, RDY_send1, EN_send2, RDY_send2, EN_receive1, RDY_receive1, EN_receive2, RDY_receive2.
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+50 out of 50 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: send1_data[9:0], send2_data[9:0], receive1[9:0], receive2[9:0], CLK, RST_N, EN_send1, RDY_send1, EN_send2, RDY_send2, EN_receive1, RDY_receive1, EN_receive2, RDY_receive2.
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send1_data[0]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send1_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 4)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send1_data[1]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send1_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 4)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send1_data[2]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send1_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 4)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send1_data[3]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send1_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 4)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send1_data[4]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send1_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 4)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send1_data[5]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send1_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 4)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send1_data[6]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send1_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 4)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send1_data[7]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send1_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 4)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send1_data[8]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send1_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 4)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send1_data[9]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send1_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 4)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send2_data[0]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send2_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 7)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send2_data[1]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send2_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 7)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send2_data[2]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send2_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 7)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send2_data[3]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send2_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 7)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send2_data[4]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send2_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 7)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send2_data[5]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send2_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 7)
+Related violations: <none>
+
+XDCH-2#17 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send2_data[6]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send2_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 7)
+Related violations: <none>
+
+XDCH-2#18 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send2_data[7]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send2_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 7)
+Related violations: <none>
+
+XDCH-2#19 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send2_data[8]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send2_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 7)
+Related violations: <none>
+
+XDCH-2#20 Warning
+Same min and max delay values on IO port  
+The same input delay of 1.200 ns has been defined on port 'send2_data[9]' relative to clock general_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks general_clk] -clock_fall -max -add_delay 1.200 [get_ports {send2_data[*]}]
+/home/csgvinamra/Downloads/constraints.xdc (Line: 7)
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+
